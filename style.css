@@ -18,7 +18,8 @@
 
 .navbar {
     height: 75px;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background: linear-gradient(90deg, #162025 0%, #22333B 85%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,36 +37,40 @@
     display: flex;
 }
 
-.navbar a {
-    color: var(--secondary-color);
-    font-size: x-large;
-    text-decoration: none;
-    transition: .25s;
-
-    &:hover {
-        color: var(--beige);
-    }
-}
-
-.navbar input {
-    margin-left: 50px;
-    height: 30px;
-    width: 200px;
-    border-color: transparent;
-    background-color: transparent;
-    color: #fff;
-    font-size: large;
-    border-bottom: var(--secondary-color) 2px solid;
-
-    &::placeholder {
+.navbar {
+    & a {
         color: var(--secondary-color);
-        font-size: large;
+        font-size: x-large;
+        text-decoration: none;
+        transition: .25s;
+        
+        &:hover {
+            color: var(--beige);
+        }
     }
 
-    &:focus {
-        outline: none;
+    & input {
+        margin-left: 50px;
+        height: 30px;
+        width: 200px;
+        border-color: transparent;
+        background-color: transparent;
+        color: #fff;
+        font-size: large;
+        border-bottom: var(--secondary-color) 2px solid;
+    
+        &::placeholder {
+            color: var(--secondary-color);
+            opacity: .5;
+            font-size: large;
+        }
+    
+        &:focus {
+            outline: none;
+        }
     }
 }
+
 
 #foreground {
     width: 100%;
@@ -76,5 +81,31 @@
 }
 
 .imageContainer {
-    box-shadow: inset 0px -150px 100px -50px #000
+    height: 80vh;
+    background-color: rgba(0,0,0,.4);
+    box-shadow: inset 0px -150px 100px -100px #000;
+}
+
+section {
+    position: relative;
+    text-align: center;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    color: var(--secondary-color);
+    top: 25%;
+    width: 100%;
+    font-size: 4vw;
+}
+
+.description {
+    color: var(--secondary-color);
+    top: 45%;
 }
