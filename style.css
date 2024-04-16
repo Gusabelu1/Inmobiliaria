@@ -39,6 +39,10 @@
     display: flex;
 }
 
+input:focus {
+    outline: none;
+}
+
 .navbar {
     & a {
         color: var(--secondary-color);
@@ -60,19 +64,18 @@
         color: #fff;
         font-size: large;
         border-bottom: var(--secondary-color) 2px solid;
-    
+
         &::placeholder {
             color: var(--secondary-color);
             opacity: .5;
             font-size: large;
         }
-    
-        &:focus {
-            outline: none;
-        }
     }
 }
 
+.navbar-link {
+    margin-right: 20px;
+}
 
 #foreground {
     width: 100%;
@@ -100,14 +103,167 @@ section {
     transform: translate(-50%, -50%);
 }
 
+#busqueda {
+    position: relative;
+}
+
 .title {
+    position: absolute;
     color: var(--secondary-color);
     top: 25%;
     width: 100%;
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 .description {
+    position: absolute;
     color: var(--secondary-color);
-    top: 45%;
+    top: 55%;
+    left: 23%;
+    
+    display: flex;
+
+    & input {
+        width: 45vw;
+        height: 40px;
+        border: 0;
+        border-radius: 100px 0 0 100px;
+        text-indent: 15px;
+        font-weight: 600;
+        font-size: large;
+        color: var(--black);
+
+        &::placeholder {
+            text-align: center;
+            color: var(--black);
+            font-weight: 500;
+            opacity: .8;
+            font-size: large;
+        }
+    }
+
+    & button {
+        width: 100px;
+        border: 0;
+        border-radius: 0 100px 100px 0;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        transition: .25s;
+
+        &:hover {
+            background-color: var(--terciary-color);
+            cursor: pointer;
+        }
+    }
+}
+
+#propiedades {
+    margin-top: 5vh;
+}
+
+#title {
+    color: var(--terciary-color);
+    font-size: 40px;
+    margin-bottom: 2vh;
+}
+
+.imagenes {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#imagen {
+    max-width: 267px;
+    display: inline-block;
+    width: 33%;
+    height: 33vh;
+    object-fit: cover;
+    transition: .5s;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+        z-index: 0;
+    }
+}
+
+#contacto {
+    height: 500px;
+    background-color: var(--terciary-color);
+    & #title{
+        color: var(--secondary-color);
+    }
+
+    & form {
+        max-width: 600px;
+        margin: auto;
+        margin-top: 50px;
+
+        & input {
+            max-width: 250px;
+            display: inline-block;
+            width: 50%;
+            height: 7.5vh;
+            border: 0;
+            background-color: transparent;
+            border-bottom: 1px solid var(--beige);
+            color: #fff;
+            font-size: large;
+            margin: 20px 15px 0 15px;
+            transition: .25s ease-in-out;
+
+            &:focus {
+                border-bottom: 1px solid var(--secondary-color);
+            }
+
+            &::placeholder {
+                font-size: large;
+                color: #fff;
+                opacity: .6;
+            }
+        }
+
+        & textarea {
+            margin-top: 40px;
+            width: 100%;
+            border: 1px solid var(--beige);
+            background-color: transparent;
+            border-radius: 2px;
+            color: #fff;
+            font-size: large;
+            transition: .25s ease-in-out;
+
+            &:focus-visible {
+                border: 1px solid var(--secondary-color);
+                outline: none;
+            }
+
+            &::placeholder {
+                font-size: large;
+                color: #fff;
+                opacity: .6;
+            }
+        }
+
+        & button {
+            margin-top: 2vh;
+            transform: scale(1.3);
+            padding: 10px;
+            border-radius: 5px;
+            border: 0;
+            background-color: var(--beige);
+            color: #fff;
+            font-weight: 700;
+            transition: .25s ease-in-out;
+
+            &:hover {
+                background-color: var(--secondary-color);
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+
+        }
+    }
 }

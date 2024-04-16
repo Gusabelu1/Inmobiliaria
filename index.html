@@ -10,27 +10,48 @@
         <header class="navbar">
             <img src="./img/logo.png" alt="Logo">
             <div>
-                <a href="/index.html">Inicio</a>
-                <input type="text" placeholder="Buscar departamentos">
+                <a href="#busqueda" class="navbar-link">Inicio</a>
+                <a href="#propiedades" class="navbar-link">Propiedades</a>
+                <a href="#contacto" class="navbar-link">Contacto</a>
             </div>
         </header>
         <section>
-            <div class="imageContainer">
-                <img src="/images/parallax.webp" alt="" id="foreground">
+            <div id="busqueda">
+                <div class="imageContainer">
+                    <img src="/images/parallax.webp" alt="" id="foreground">
+                </div>
+                <h1 class="title">Bienvenido a la Inmobiliaria xx</h1>
+                <div class="description">
+                    <input type="text" placeholder="¿En que zona vas a querer la propiedad de tus sueños?">
+                    <button>Buscar</button>
+                </div>
             </div>
-            <h1 class="title center">Bienvenido a la Inmobiliaria xx</h1>
-            <p class="description center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos saepe obcaecati quod ipsa eaque dolore cumque consectetur fuga nemo. Facilis eveniet iure nesciunt vitae perferendis totam exercitationem molestias accusamus. Ad.</p>
+            
+            <div id="propiedades">
+                <h2 id="title">Propiedades en venta</h2>
+                <div class="imagenes">
+                    <img src="images/depto1.jpg" alt="Propiedad 1" id="imagen">
+                    <img src="images/depto2.jpg" alt="Propiedad 2" id="imagen">
+                    <img src="images/depto3.jpg" alt="Propiedad 3" id="imagen">
+                    <img src="images/depto4.jpg" alt="Propiedad 4" id="imagen">
+                    <img src="images/depto5.jpg" alt="Propiedad 5" id="imagen">
+                    <img src="images/depto6.webp" alt="Propiedad 6" id="imagen">
+                    <img src="images/depto7.webp" alt="Propiedad 7" id="imagen">
+                    <img src="images/depto8.webp" alt="Propiedad 8" id="imagen">
+                    <img src="images/depto9.jpg" alt="Propiedad 9" id="imagen">
+                </div>
+            </div>
 
-            <div class="imagenes">
-                <img src="" alt="Propiedad 1">
-                <img src="" alt="Propiedad 2">
-                <img src="" alt="Propiedad 3">
-                <img src="" alt="Propiedad 4">
-                <img src="" alt="Propiedad 5">
-                <img src="" alt="Propiedad 6">
-                <img src="" alt="Propiedad 7">
-                <img src="" alt="Propiedad 8">
-                <img src="" alt="Propiedad 9">
+            <div id="contacto">
+                <h2 id="title">Contactanos y reservá tu visita</h2>
+                <form action="post">
+                    <input type="text" id="name" placeholder="Nombre">
+                    <input type="text" id="lastname" placeholder="Apellido">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="tel" id="phone" placeholder="Teléfono">
+                    <textarea id="message" placeholder="Escriba su consulta" rows="5"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
         </section>  
         <footer>
