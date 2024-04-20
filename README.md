@@ -1,4 +1,4 @@
-## Inmobiliaria X
+## Luxuprop
 Sitio web de una inmobiliaria de lujo.
 
 ## Actividad Principal de la Empresa
@@ -28,7 +28,7 @@ El sitio va dirigido a clientes de alto poder adquisitivo, que busquen una propi
 | Dorado | ![#C6AC8E](https://via.placeholder.com/10/C6AC8E?text=+) #C6AC8E |
 
 ### Logo
-![Logo](logo.png)
+![Logo](images/luxuprop_logo.png)
 
 ### Eslogan
 "Donde el lujo se encuentra con la comodidad"
@@ -52,13 +52,14 @@ Confort, elegancia, lujo y exclusividad.
 ```
 
 #### Palabras Clave:
-- Confort
-- Lujo
+- Búsqueda
 - Propiedades
 - Compra
 - Alquiler
 
+## Descripción del Sitio Web
+![image](images/grafico.png)
 
 ## Integrantes
-- [@santinocastro](https://www.github.com/Gusabelu1)
-- [@pedroscotti](https://github.com/PeppoScotti)
+- [@santinocastro](https://www.github.com/Gusabelu1) - Programador, Diseñador
+- [@pedroscotti](https://github.com/PeppoScotti) - Comunicador Web
