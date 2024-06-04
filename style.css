@@ -316,3 +316,26 @@ footer {
         font-size: medium;
     }
 }
+
+#propiedad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 180px;
+}
+
+#depto {
+    justify-self: center;
+    height: 300px;
+}
+
+#desc {
+    font-size: large;
+    text-align: justify;
+    padding: 30px;
+}
+
+#reservar {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
