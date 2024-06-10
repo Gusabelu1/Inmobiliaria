@@ -1,341 +1,357 @@
-@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap");
 
 * {
-    font-family: 'Battambang', serif;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  font-family: "Battambang", serif;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
-    --primary-color: #22333B;
-    --secondary-color: #EAE0D5;
-    --terciary-color: #5E503F; 
-    --black: #0A0908;
-    --beige: #C6AC8E;
+  --primary-color: #22333b;
+  --secondary-color: #eae0d5;
+  --terciary-color: #5e503f;
+  --black: #0a0908;
+  --beige: #c6ac8e;
 }
 
 .navbar {
-    height: 75px;
-    /* background-color: var(--primary-color); */
-    background: linear-gradient(90deg, #162025 0%, #22333B 85%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    position: sticky;
-    z-index: 5;
+  height: 75px;
+  /* background-color: var(--primary-color); */
+  background: linear-gradient(90deg, #162025 0%, #22333b 85%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  position: sticky;
+  z-index: 5;
 }
 
 #logo {
-    height: 60px;
+  height: 60px;
 }
 
 .parallax-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    perspective: 8px;
-    perspective-origin: 0%;
-    display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 8px;
+  perspective-origin: 0%;
+  display: flex;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 .navbar {
-    & a {
-        color: var(--secondary-color);
-        font-size: x-large;
-        text-decoration: none;
-        transition: .25s;
-        
-        &:hover {
-            color: var(--beige);
-        }
-    }
+  & a {
+    color: var(--secondary-color);
+    font-size: x-large;
+    text-decoration: none;
+    transition: 0.25s;
 
-    & input {
-        margin-left: 50px;
-        height: 30px;
-        width: 200px;
-        border-color: transparent;
-        background-color: transparent;
-        color: #fff;
-        font-size: large;
-        border-bottom: var(--secondary-color) 2px solid;
-
-        &::placeholder {
-            color: var(--secondary-color);
-            opacity: .5;
-            font-size: large;
-        }
+    &:hover {
+      color: var(--beige);
     }
+  }
+
+  & input {
+    margin-left: 50px;
+    height: 30px;
+    width: 200px;
+    border-color: transparent;
+    background-color: transparent;
+    color: #fff;
+    font-size: large;
+    border-bottom: var(--secondary-color) 2px solid;
+
+    &::placeholder {
+      color: var(--secondary-color);
+      opacity: 0.5;
+      font-size: large;
+    }
+  }
 }
 
 .navbar-link {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 #foreground {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: -2;
 }
 
 .imageContainer {
-    height: 80vh;
-    background-color: rgba(0,0,0,.4);
-    box-shadow: inset 0px -150px 100px -100px #000;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px -150px 100px -100px #000;
 }
 
 section {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #busqueda {
-    position: relative;
+  position: relative;
 
-    &:before { 
-        display: block; 
-        content: " "; 
-        height: 75px;      /* Give height of your fixed element */
-        margin-top: -75px; /* Give negative margin of your fixed element */  	
-        visibility: hidden; 
-    }
+  &:before {
+    display: block;
+    content: " ";
+    height: 75px; /* Give height of your fixed element */
+    margin-top: -75px; /* Give negative margin of your fixed element */
+    visibility: hidden;
+  }
 }
 
 .title {
-    position: absolute;
-    color: var(--secondary-color);
-    top: 35%;
-    width: 100%;
-    font-size: 5vw;
-    font-weight: 400;
+  position: absolute;
+  color: var(--secondary-color);
+  top: 35%;
+  width: 100%;
+  font-size: 5vw;
+  font-weight: 400;
 }
 
 .description {
-    position: absolute;
+  position: absolute;
+  color: var(--secondary-color);
+  top: 60%;
+  left: 23%;
+
+  display: flex;
+
+  & input {
+    width: 45vw;
+    height: 40px;
+    border: 0;
+    border-radius: 100px 0 0 100px;
+    text-indent: 15px;
+    font-weight: 600;
+    font-size: large;
+    color: var(--primary-color);
+
+    &::placeholder {
+      text-align: center;
+      color: var(--black);
+      font-weight: 500;
+      opacity: 0.8;
+      font-size: large;
+    }
+  }
+
+  & button {
+    width: 100px;
+    border: 0;
+    border-radius: 0 100px 100px 0;
+    background-color: var(--primary-color);
     color: var(--secondary-color);
-    top: 60%;
-    left: 23%;
-    
-    display: flex;
+    transition: 0.25s;
+    font-weight: 400;
 
-    & input {
-        width: 45vw;
-        height: 40px;
-        border: 0;
-        border-radius: 100px 0 0 100px;
-        text-indent: 15px;
-        font-weight: 600;
-        font-size: large;
-        color: var(--primary-color);
-
-        &::placeholder {
-            text-align: center;
-            color: var(--black);
-            font-weight: 500;
-            opacity: .8;
-            font-size: large;
-        }
+    &:hover {
+      background-color: var(--terciary-color);
+      cursor: pointer;
     }
-
-    & button {
-        width: 100px;
-        border: 0;
-        border-radius: 0 100px 100px 0;
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
-        transition: .25s;
-        font-weight: 400;
-
-        &:hover {
-            background-color: var(--terciary-color);
-            cursor: pointer;
-        }
-    }
+  }
 }
 
 #propiedades {
-    margin-top: 5vh;
-    
-    &:before { 
-        display: block; 
-        content: " "; 
-        height: 100px;      /* Give height of your fixed element */
-        margin-top: -100px; /* Give negative margin of your fixed element */  	
-        visibility: hidden; 
-    }
+  margin-top: 5vh;
+
+  &:before {
+    display: block;
+    content: " ";
+    height: 100px; /* Give height of your fixed element */
+    margin-top: -100px; /* Give negative margin of your fixed element */
+    visibility: hidden;
+  }
 }
 
 #title {
-    color: var(--terciary-color);
-    font-size: 40px;
-    margin-bottom: 2vh;
+  color: var(--terciary-color);
+  font-size: 40px;
+  margin-bottom: 2vh;
 }
 
 .imagenes {
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 50px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 #imagen {
-    max-width: 267px;
-    display: inline-block;
-    width: 33%;
-    height: 33vh;
-    object-fit: cover;
-    transition: .5s;
-    border-radius: 5px;
-    margin: 2px;
-    cursor: pointer;
+  max-width: 267px;
+  display: inline-block;
+  width: 33%;
+  height: 33vh;
+  object-fit: cover;
+  transition: 0.5s;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
 
-    &:hover {
-        transform: scale(1.05);
-        z-index: 0;
-    }
+  &:hover {
+    transform: scale(1.05);
+    z-index: 0;
+  }
 }
 
 #contacto {
-    height: 600px;
-    background-color: var(--terciary-color);
+  height: 600px;
+  background-color: var(--terciary-color);
+  display: block;
+  padding-top: 50px;
+
+  &:before {
     display: block;
-    padding-top: 50px;
+    content: " ";
+    height: 50px; /* Give height of your fixed element */
+    margin-top: -50px; /* Give negative margin of your fixed element */
+    visibility: hidden;
+  }
 
-    &:before { 
-        display: block; 
-        content: " "; 
-        height: 50px;      /* Give height of your fixed element */
-        margin-top: -50px; /* Give negative margin of your fixed element */  	
-        visibility: hidden; 
+  & #title {
+    padding-top: 30px;
+    color: var(--secondary-color);
+  }
+
+  & form {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+
+    & input {
+      max-width: 250px;
+      display: inline-block;
+      width: 50%;
+      height: 7.5vh;
+      border: 0;
+      background-color: transparent;
+      border-bottom: 1px solid var(--beige);
+      color: #fff;
+      font-size: large;
+      margin: 20px 15px 0 15px;
+      transition: 0.25s ease-in-out;
+
+      &:focus {
+        border-bottom: 1px solid var(--secondary-color);
+      }
+
+      &::placeholder {
+        font-size: large;
+        color: #fff;
+        opacity: 0.6;
+      }
     }
-    
-    & #title{
-        padding-top: 30px;
-        color: var(--secondary-color);
+
+    & textarea {
+      margin-top: 40px;
+      width: 100%;
+      border: 1px solid var(--beige);
+      background-color: transparent;
+      border-radius: 3px;
+      color: #fff;
+      font-size: large;
+      transition: 0.25s ease-in-out;
+
+      &:focus-visible {
+        border: 1px solid var(--secondary-color);
+        background-color: var(--primary-color);
+        outline: none;
+      }
+
+      &::placeholder {
+        font-size: large;
+        color: #fff;
+        opacity: 0.6;
+      }
     }
 
-    & form {
-        max-width: 600px;
-        margin: auto;
-        margin-top: 30px;
+    & button {
+      margin-top: 2vh;
+      transform: scale(1.3);
+      padding: 10px;
+      border-radius: 5px;
+      border: 0;
+      background-color: var(--beige);
+      color: var(--terciary-color);
+      font-weight: 700;
+      transition: 0.25s ease-in-out;
 
-        & input {
-            max-width: 250px;
-            display: inline-block;
-            width: 50%;
-            height: 7.5vh;
-            border: 0;
-            background-color: transparent;
-            border-bottom: 1px solid var(--beige);
-            color: #fff;
-            font-size: large;
-            margin: 20px 15px 0 15px;
-            transition: .25s ease-in-out;
-
-            &:focus {
-                border-bottom: 1px solid var(--secondary-color);
-            }
-
-            &::placeholder {
-                font-size: large;
-                color: #fff;
-                opacity: .6;
-            }
-        }
-
-        & textarea {
-            margin-top: 40px;
-            width: 100%;
-            border: 1px solid var(--beige);
-            background-color: transparent;
-            border-radius: 3px;
-            color: #fff;
-            font-size: large;
-            transition: .25s ease-in-out;
-
-            &:focus-visible {
-                border: 1px solid var(--secondary-color);
-                background-color: var(--primary-color);
-                outline: none;
-            }
-
-            &::placeholder {
-                font-size: large;
-                color: #fff;
-                opacity: .6;
-            }
-        }
-
-        & button {
-            margin-top: 2vh;
-            transform: scale(1.3);
-            padding: 10px;
-            border-radius: 5px;
-            border: 0;
-            background-color: var(--beige);
-            color: var(--terciary-color);
-            font-weight: 700;
-            transition: .25s ease-in-out;
-
-            &:hover {
-                background-color: var(--secondary-color);
-                color: var(--primary-color);
-                cursor: pointer;
-            }
-
-        }
+      &:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        cursor: pointer;
+      }
     }
+  }
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 25px 0 30px 25%;
-    height: 100px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 25px 0 30px 25%;
+  height: 100px;
 
-    & h3 {
-        font-weight: 400;
-        font-size: medium;
-    }
+  & h3 {
+    font-weight: 400;
+    font-size: medium;
+  }
 }
 
 #propiedad {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 180px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 180px;
+  color: var(--terciary-color);
+  background-color: var(--secondary-color);
 }
 
 #depto {
-    justify-self: center;
-    height: 300px;
+  justify-self: center;
+  height: 300px;
+  border-radius: 5%;
 }
 
 #desc {
-    font-size: large;
-    text-align: justify;
-    padding: 30px;
+  font-size: large;
+  text-align: justify;
+  padding: 30px;
 }
 
 #reservar {
-    display: block;
-    width: 100%;
+  display: block;
+  cursor: pointer;
+  margin-top: 2vh;
+  transform: scale(1.3);
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--beige);
+  color: var(--terciary-color);
+  font-weight: 700;
+  transition: 0.25s ease-in-out;
+
+  &:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     cursor: pointer;
+  }
 }

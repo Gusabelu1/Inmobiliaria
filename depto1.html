@@ -17,15 +17,22 @@
             <a href="index.html#contacto" class="navbar-link">Contacto</a>
         </div>
     </header>
-
     <section id="propiedad">
         <img src="images/depto1.jpg" alt="Propiedad 1" id="depto">
-
         <p id="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sint accusamus quisquam quidem doloribus
-            itaque iure unde illum voluptas, omnis aspernatur, necessitatibus neque recusandae a praesentium pariatur
-            accusantium ducimus dolor?
+            Sumérjase en el lujo en el corazón de Palermo con este departamento de 180 metros cuadrados, que incluye
+            tres habitaciones en suite, cocina moderna con electrodomésticos de alta gama, balcón con vistas al verde, y
+            acceso a piscina, gimnasio y conserjería 24/7. Rodeado de restaurantes de moda, boutiques y parques, es el
+            epítome de la vida elegante en la ciudad.
+            <br>
+            <b>Precio: U$D 1.600.000</b>
             <button id="reservar">Reservar</button>
+            <script>
+                const button = document.getElementById('reservar');
+                button.addEventListener('click', function () {
+                    alert('Reserva realizada exitosamente.');
+                });
+            </script>
         </p>
     </section>
 </body>
